@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/sozialhelden/ui/compare/v1.0.0...v1.0.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* remove umd entrypoints from package.json ([b197f53](https://github.com/sozialhelden/ui/commit/b197f5310521d5bd43e64d54ca6bf5910f9f5e37))
+
 # 1.0.0 (2025-08-19)
 
 
