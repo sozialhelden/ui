@@ -3,13 +3,13 @@ import { useState } from "react";
 import { Button } from "../components/ui/button";
 import {
   Dialog,
-  DialogTrigger,
+  DialogClose,
   DialogContent,
-  DialogHeader,
-  DialogTitle,
   DialogDescription,
   DialogFooter,
-  DialogClose,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
 } from "../components/ui/dialog";
 
 const meta = {
