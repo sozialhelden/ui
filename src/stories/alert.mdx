@@ -1,0 +1,29 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as AlertStories from './alert.stories';
+
+<Meta of={AlertStories} />
+
+# Alert
+
+[https://ui.shadcn.com/docs/components/alert](https://ui.shadcn.com/docs/components/alert)
+
+<Canvas of={AlertStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Alert, AlertDescription, AlertTitle } from '@sozialhelden/ui';
+
+export function App() {
+  return (
+    <Alert>
+      <AlertTitle>Heads up!</AlertTitle>
+      <AlertDescription>
+        Lorem Ipsum dolor sit amet.
+      </AlertDescription>
+    </Alert>
+  );
+}
+```

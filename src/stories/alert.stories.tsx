@@ -1,24 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert.tsx";
 
 const meta = {
-  title: "UI/Alert",
+  title: "components/Alert",
   component: Alert,
-  tags: ["!dev"],
-  parameters: {
-    layout: "centered",
-  },
-  argTypes: {
-    variant: {
-      control: "select",
-      options: ["default", "destructive"],
-      description: "Visual style variant of the alert",
-    },
-    children: {
-      control: false,
-    },
-  },
-  args: {},
+  subcomponents: { AlertTitle, AlertDescription },
 } satisfies Meta<typeof Alert>;
 
 export default meta;
@@ -28,9 +14,7 @@ export const Default: Story = {
   render: (args) => (
     <Alert {...args}>
       <AlertTitle>Heads up!</AlertTitle>
-      <AlertDescription>
-        You can add components to your app using the cli.
-      </AlertDescription>
+      <AlertDescription>Lorem Ipsum dolor sit amet.</AlertDescription>
     </Alert>
   ),
 };

@@ -1,0 +1,24 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button
+
+[https://ui.shadcn.com/docs/components/button](https://ui.shadcn.com/docs/components/button)
+
+<Canvas of={ButtonStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Button } from '@sozialhelden/ui';
+
+export function App() {
+  return (
+    <Button>Click me</Button>
+  );
+}
+```
