@@ -1,0 +1,32 @@
+name: publish
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  publish:
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+#          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm audit signatures
+      - run: npm run build
+      - run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
