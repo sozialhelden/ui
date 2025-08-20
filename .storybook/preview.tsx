@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react-vite";
+import * as React from "react";
 
 import "./main.css";
 import { themes } from "storybook/theming";
@@ -7,7 +8,7 @@ const preview: Preview = {
   tags: ["autodocs", "!dev"],
   decorators: [
     (Story) => (
-      <div className="bg-white dark:bg-gray-950 p-8 flex justify-center min-h-[450px]">
+      <div className="bg-white dark:bg-gray-950 p-8 flex justify-center">
         <Story />
       </div>
     ),
