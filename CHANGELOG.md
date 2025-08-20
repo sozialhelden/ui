@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/sozialhelden/ui/compare/v1.0.2...v1.1.0) (2025-08-20)
+
+
+### Bug Fixes
+
+* style exports ([8063bed](https://github.com/sozialhelden/ui/commit/8063bed9709e442927b571cbaaa11f6ebeeb5d9a))
+
+
+### Features
+
+* add additional components ([27aed96](https://github.com/sozialhelden/ui/commit/27aed96461091a9c9ea4564bc7875e19285cab01))
+
 ## [1.0.2](https://github.com/sozialhelden/ui/compare/v1.0.1...v1.0.2) (2025-08-20)
 
 
