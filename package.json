@@ -20,7 +20,7 @@
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "npm run build:lib",
+    "build": "npm run build:lib && npm run build:storybook",
     "build:lib": "vite build",
     "build:storybook": "storybook build",
     "lint": "biome lint",
