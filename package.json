@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
-    "@chromatic-com/storybook": "4.1.0",
+    "@chromatic-com/storybook": "4.1.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@storybook/addon-a11y": "9.1.2",
