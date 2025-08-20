@@ -17,10 +17,24 @@ npm i --save @sozialhelden/ui
 Add the following to your main CSS file, make sure to adapt the path to the `@sozialhelden/ui` package if necessary:
 
 ```css
+/* Import fonts */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/400-italic.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/500-italic.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/600-italic.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/700-italic.css";
+
+/* Add tailwind itself and necessary addons */
 @import "tailwindcss";
 @import "tw-animate-css";
+
+/* Import tailwind config from ui library */
 @import "@sozialhelden/ui/style.css";
 
+/* Add ui library as source for class purging */
 @source "../../node_modules/@sozialhelden/ui";
 ```
 ## Usage

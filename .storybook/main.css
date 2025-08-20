@@ -1,5 +1,17 @@
+/** biome-ignore-all lint/suspicious/noUnknownAtRules: tailwind-specific add rules */
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/400-italic.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/500-italic.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/600-italic.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/700-italic.css";
+
 @import "tailwindcss";
 @import "tw-animate-css";
+
 @import "../src/style.css";
 
-@source "../src/"
+@source "../src/";
