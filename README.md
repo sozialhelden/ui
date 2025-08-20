@@ -1,8 +1,10 @@
 # @sozialhelden/ui
 
-> UI components shared by different sozialhelden projects.
+> UI components shared by different sozialhelden projects.  
 
-## Usage
+Check the [Storybook](https://sozialhelden.github.io/ui/) for an overview of the available components.
+
+## Install
 
 Make sure you have Tailwind CSS installed in your project. If you don't have it yet, you should install and set it up first: https://tailwindcss.com/docs/installation/using-vite
 
@@ -21,6 +23,9 @@ Add the following to your main CSS file, make sure to adapt the path to the `@so
 
 @source "../../node_modules/@sozialhelden/ui";
 ```
+## Usage
+
+Check the [Storybook](https://sozialhelden.github.io/ui/) for an overview of the available components.
 
 Now you can use tailwind classes and the components provided by the `@sozialhelden/ui` package in your project, for example:
 
