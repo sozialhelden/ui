@@ -1,0 +1,41 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as NavigationMenuStories from './navigation-menu.stories';
+
+<Meta of={NavigationMenuStories} />
+
+# Navigation Menu
+
+* [https://ui.shadcn.com/docs/components/navigation-menu](https://ui.shadcn.com/docs/components/navigation-menu)
+* [https://www.radix-ui.com/primitives/docs/components/navigation-menu](https://www.radix-ui.com/primitives/docs/components/navigation-menu)
+
+<Canvas of={NavigationMenuStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from '@sozialhelden/ui';
+
+export function App() {
+  return (
+    <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <NavigationMenuLink>Link</NavigationMenuLink>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+  );
+}
+```

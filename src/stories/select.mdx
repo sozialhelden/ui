@@ -1,0 +1,40 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as SelectStories from './select.stories';
+
+<Meta of={SelectStories} />
+
+# Select
+
+* [https://ui.shadcn.com/docs/components/select](https://ui.shadcn.com/docs/components/select)
+* [https://www.radix-ui.com/primitives/docs/components/select](https://www.radix-ui.com/primitives/docs/components/select)
+
+<Canvas of={SelectStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@sozialhelden/ui';
+
+export function App() {
+  return (
+    <Select>
+      <SelectTrigger>
+        <SelectValue placeholder="Select a fruit" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectItem value="apple">Apple</SelectItem>
+        <SelectItem value="banana">Banana</SelectItem>
+        <SelectItem value="blueberry">Blueberry</SelectItem>
+      </SelectContent>
+    </Select>
+  );
+}
+```
