@@ -1,0 +1,22 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as InputStories from './input.stories';
+
+<Meta of={InputStories} />
+
+# Input
+
+* [https://ui.shadcn.com/docs/components/input](https://ui.shadcn.com/docs/components/input)
+
+<Canvas of={InputStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Input } from '@sozialhelden/ui';
+
+export function App() {
+  return <Input type="email" placeholder="Email" />;
+}
+```

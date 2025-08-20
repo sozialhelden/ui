@@ -1,0 +1,24 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as SkeletonStories from './skeleton.stories';
+
+<Meta of={SkeletonStories} />
+
+# Skeleton
+
+* [https://ui.shadcn.com/docs/components/skeleton](https://ui.shadcn.com/docs/components/skeleton)
+
+<Canvas of={SkeletonStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Skeleton } from '@sozialhelden/ui';
+
+export function App() {
+  return (
+    <Skeleton className="h-4 w-[250px]" />
+  );
+}
+```

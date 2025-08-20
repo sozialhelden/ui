@@ -1,0 +1,22 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as TextareaStories from './textarea.stories';
+
+<Meta of={TextareaStories} />
+
+# Textarea
+
+* [https://ui.shadcn.com/docs/components/textarea](https://ui.shadcn.com/docs/components/textarea)
+
+<Canvas of={TextareaStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Textarea } from '@sozialhelden/ui';
+
+export function App() {
+  return <Textarea placeholder="Type your message here." />;
+}
+```

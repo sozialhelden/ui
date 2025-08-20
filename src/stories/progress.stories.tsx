@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@/components/ui/button.tsx";
+import { Progress } from "@/components/ui/progress.tsx";
 
 const meta = {
-  title: "atoms/Button",
-  component: Button,
-} satisfies Meta<typeof Button>;
+  title: "atoms/Progress",
+  component: Progress,
+} satisfies Meta<typeof Progress>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Button",
+    value: 33,
   },
 };

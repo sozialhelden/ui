@@ -1,0 +1,23 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as ProgressStories from './progress.stories';
+
+<Meta of={ProgressStories} />
+
+# Progress
+
+* [https://ui.shadcn.com/docs/components/progress](https://ui.shadcn.com/docs/components/progress)
+* [https://www.radix-ui.com/primitives/docs/components/progress](https://www.radix-ui.com/primitives/docs/components/progress)
+
+<Canvas of={ProgressStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Progress } from '@sozialhelden/ui';
+
+export function App() {
+  return <Progress value={33} />;
+}
+```
