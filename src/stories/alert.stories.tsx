@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert.tsx";
 
 const meta = {
-  title: "components/Alert",
+  title: "atoms/Alert",
   component: Alert,
   subcomponents: { AlertTitle, AlertDescription },
 } satisfies Meta<typeof Alert>;

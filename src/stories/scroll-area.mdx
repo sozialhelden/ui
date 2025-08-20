@@ -1,0 +1,27 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as ScrollAreaStories from './scroll-area.stories';
+
+<Meta of={ScrollAreaStories} />
+
+# Scroll Area
+
+* [https://ui.shadcn.com/docs/components/scroll-area](https://ui.shadcn.com/docs/components/scroll-area)
+* [https://www.radix-ui.com/primitives/docs/components/scroll-area](https://www.radix-ui.com/primitives/docs/components/scroll-area)
+
+<Canvas of={ScrollAreaStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { ScrollArea } from '@sozialhelden/ui';
+
+export function App() {
+  return (
+    <ScrollArea>
+      Scrollable content goes here.
+    </ScrollArea>
+  );
+}
+```

@@ -1,0 +1,31 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as SwitchStories from './switch.stories';
+
+<Meta of={SwitchStories} />
+
+# Switch
+
+* [https://ui.shadcn.com/docs/components/switch](https://ui.shadcn.com/docs/components/switch)
+* [https://www.radix-ui.com/primitives/docs/components/switch](https://www.radix-ui.com/primitives/docs/components/switch)
+
+<Canvas of={SwitchStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Switch } from '@sozialhelden/ui';
+import { useId } from "react";
+
+export function App() {
+  const id = useId();
+
+  return (
+    <div>
+      <Switch id={id} />
+      <Label htmlFor={id}>Airplane Mode</Label>
+    </div>
+  );
+}
+```

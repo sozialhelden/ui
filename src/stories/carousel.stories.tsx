@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel.tsx";
 
 const meta = {
-  title: "components/Carousel",
+  title: "atoms/Carousel",
   component: Carousel,
   subcomponents: {
     CarouselContent,

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const meta = {
-  title: "Components/Avatar",
+  title: "atoms/Avatar",
   component: Avatar,
   subcomponents: { AvatarImage, AvatarFallback },
 } satisfies Meta<typeof Avatar>;

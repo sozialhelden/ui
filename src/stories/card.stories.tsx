@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/card.tsx";
 
 const meta = {
-  title: "components/Card",
+  title: "atoms/Card",
   subcomponents: {
     CardAction,
     CardContent,
