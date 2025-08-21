@@ -27,6 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: dist/
+          name: dist
 
   publish-npm-package:
     runs-on: ubuntu-latest
@@ -45,6 +46,9 @@ jobs:
           fetch-depth: 0
       - name: Download build artifacts
         uses: actions/download-artifact@v5
+        with:
+          path: dist/
+          name: dist
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
