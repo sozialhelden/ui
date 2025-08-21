@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/sozialhelden/ui/compare/v1.1.1...v1.1.2) (2025-08-21)
+
+
+### Bug Fixes
+
+* unpin peer deps ([3765edc](https://github.com/sozialhelden/ui/commit/3765edcb8117ece503afab50b57aed1d60f80d6b))
+
 ## [1.1.1](https://github.com/sozialhelden/ui/compare/v1.1.0...v1.1.1) (2025-08-21)
 
 
