@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/sozialhelden/ui/compare/v1.1.0...v1.1.1) (2025-08-21)
+
+
+### Bug Fixes
+
+* add back components ([b63dd06](https://github.com/sozialhelden/ui/commit/b63dd068b75139a2aef5d199341f7ac54ce713e6))
+
 # [1.1.0](https://github.com/sozialhelden/ui/compare/v1.0.2...v1.1.0) (2025-08-20)
 
 
