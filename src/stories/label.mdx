@@ -1,0 +1,30 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as LabelStories from './label.stories';
+
+<Meta of={LabelStories} />
+
+# Label
+
+* [https://ui.shadcn.com/docs/components/label](https://ui.shadcn.com/docs/components/label)
+* [https://www.radix-ui.com/primitives/docs/components/label](https://www.radix-ui.com/primitives/docs/components/label)
+
+<Canvas of={LabelStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { Label, Input } from '@sozialhelden/ui';
+import { useId } from 'react';
+
+export function App() {
+  const id = useId();
+  return (
+    <div>
+      <Label htmlFor={id}>Your email address</Label>
+      <Input id={id} type="email" />
+    </div>
+  );
+}
+```

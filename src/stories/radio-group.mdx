@@ -1,0 +1,38 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as RadioGroupStories from './radio-group.stories';
+
+<Meta of={RadioGroupStories} />
+
+# Radio Group
+
+* [https://ui.shadcn.com/docs/components/radio-group](https://ui.shadcn.com/docs/components/radio-group)
+* [https://www.radix-ui.com/primitives/docs/components/radio-group](https://www.radix-ui.com/primitives/docs/components/radio-group)
+
+<Canvas of={RadioGroupStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import { RadioGroup, RadioGroupItem, Label } from '@sozialhelden/ui';
+import { useId } from "react";
+
+export function App() {
+  const defaultId = useId();
+  const comfortableId = useId();
+
+  return (
+    <RadioGroup defaultValue="comfortable">
+      <div>
+        <RadioGroupItem value="default" id={defaultId} />
+        <Label htmlFor={defaultId}>Default</Label>
+      </div>
+      <div>
+        <RadioGroupItem value="comfortable" id={comfortableId} />
+        <Label htmlFor={comfortableId}>Comfortable</Label>
+      </div>
+    </RadioGroup>
+  );
+}
+```

@@ -1,0 +1,37 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as TooltipStories from './tooltip.stories';
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+* [https://ui.shadcn.com/docs/components/tooltip](https://ui.shadcn.com/docs/components/tooltip)
+* [https://www.radix-ui.com/primitives/docs/components/tooltip](https://www.radix-ui.com/primitives/docs/components/tooltip)
+
+<Canvas of={TooltipStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@sozialhelden/ui';
+
+export function App() {
+  return (
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger>Hover</TooltipTrigger>
+        <TooltipContent>
+          Content of the tooltip
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  );
+}
+```

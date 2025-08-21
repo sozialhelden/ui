@@ -1,13 +1,16 @@
-import {Canvas, Meta} from '@storybook/addon-docs/blocks';
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
 import * as CarouselStories from './carousel.stories';
 
 <Meta of={CarouselStories} />
 
 # Carousel
 
-[https://ui.shadcn.com/docs/components/carousel](https://ui.shadcn.com/docs/components/carousel)
+* [https://ui.shadcn.com/docs/components/carousel](https://ui.shadcn.com/docs/components/carousel)
+* [https://www.embla-carousel.com/get-started/react/](https://www.embla-carousel.com/get-started/react/)
 
 <Canvas of={CarouselStories.Default} />
+
+<Controls />
 
 ## Usage
 
@@ -24,11 +27,8 @@ export function App() {
   return (
     <Carousel>
       <CarouselContent>
-        {Array.from({ length: 5 }, (_, index) => (
-          <CarouselItem key={index}>
-            <span>{index + 1}</span>
-          </CarouselItem>
-        ))}
+        <CarouselItem>1</CarouselItem>
+        <CarouselItem>2</CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
