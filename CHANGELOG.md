@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/sozialhelden/ui/compare/v1.2.0...v1.2.1) (2025-08-28)
+
+
+### Bug Fixes
+
+* add typescript to peer dep ([79b0843](https://github.com/sozialhelden/ui/commit/79b0843aa7b1b0e6c097679994916f851ee8733b))
+
 # [1.2.0](https://github.com/sozialhelden/ui/compare/v1.1.2...v1.2.0) (2025-08-28)
 
 
