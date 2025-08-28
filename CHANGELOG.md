@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/sozialhelden/ui/compare/v1.1.2...v1.2.0) (2025-08-28)
+
+
+### Features
+
+* add additional components ([21e67e5](https://github.com/sozialhelden/ui/commit/21e67e5ee388536efe21e67b1ab23ccddfe0643b))
+* add dark mode switch and fonts ([c3c6e41](https://github.com/sozialhelden/ui/commit/c3c6e41b6f41e5afcbf57cb7c9260da89e9481f2))
+
 ## [1.1.2](https://github.com/sozialhelden/ui/compare/v1.1.1...v1.1.2) (2025-08-21)
 
 
