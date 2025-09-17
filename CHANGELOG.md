@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sozialhelden/ui/compare/v1.2.1...v1.3.0) (2025-09-17)
+
+
+### Features
+
+* add form component ([100e728](https://github.com/sozialhelden/ui/commit/100e728973a4c83e312430df405fafdffd906f92))
+
 ## [1.2.1](https://github.com/sozialhelden/ui/compare/v1.2.0...v1.2.1) (2025-08-28)
 
 
