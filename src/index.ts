@@ -1,3 +1,5 @@
+export * from "@radix-ui/react-visually-hidden";
+
 export * from "@/components/ui/alert";
 export * from "@/components/ui/alert-dialog";
 export * from "@/components/ui/avatar";
