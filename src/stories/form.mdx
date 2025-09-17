@@ -1,0 +1,48 @@
+import {Canvas, Controls, Meta} from '@storybook/addon-docs/blocks';
+import * as FormStories from './form.stories';
+
+<Meta of={FormStories} />
+
+# Form
+
+* [https://ui.shadcn.com/docs/components/form](https://ui.shadcn.com/docs/components/form)
+
+<Canvas of={FormStories.Default} />
+
+<Controls />
+
+## Usage
+
+```jsx
+export function App() {
+    import { useForm } from 'react-hook-form';
+    import {
+      FormField,
+      FormItem,
+      FormLabel,
+      FormControl,
+      FormDescription,
+      FormMessage,
+      Input,
+    } from '@sozialhelden/ui';
+
+    const form = useForm()
+
+    return (
+        <FormField
+          control={form.control}
+          name="username"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Username</FormLabel>
+              <FormControl>
+                <Input {...field} />
+              </FormControl>
+              <FormDescription>This is your public display name.</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+    )
+}
+```
