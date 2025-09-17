@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/sozialhelden/ui/compare/v1.3.0...v1.3.1) (2025-09-17)
+
+
+### Bug Fixes
+
+* missing form export ([ccc0f8b](https://github.com/sozialhelden/ui/commit/ccc0f8bd2129f5d16b68b2adc53d6e916a24fb56))
+
 # [1.3.0](https://github.com/sozialhelden/ui/compare/v1.2.1...v1.3.0) (2025-09-17)
 
 
