@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/sozialhelden/ui/compare/v1.4.0...v1.4.1) (2025-09-17)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([4527e10](https://github.com/sozialhelden/ui/commit/4527e10af3eb05681188e80478d14672d8632f86))
+
 # [1.4.0](https://github.com/sozialhelden/ui/compare/v1.3.0...v1.4.0) (2025-09-17)
 
 
