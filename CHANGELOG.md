@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/sozialhelden/ui/compare/v1.3.0...v1.4.0) (2025-09-22)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([79e614a](https://github.com/sozialhelden/ui/commit/79e614ac31d40c8e5fae6795727da055276eebbe))
+* force new minor version ([5fe3453](https://github.com/sozialhelden/ui/commit/5fe3453c97402e6db151f75eb4ca934cc3b36bdd))
+* missing form export ([ccc0f8b](https://github.com/sozialhelden/ui/commit/ccc0f8bd2129f5d16b68b2adc53d6e916a24fb56))
+
+
+### Features
+
+* add visually hidden component ([7badc86](https://github.com/sozialhelden/ui/commit/7badc86aaa2e8be283f9600d0846d2f6932f1555))
+
 # [1.4.0](https://github.com/sozialhelden/ui/compare/v1.3.0...v1.4.0) (2025-09-20)
 
 
