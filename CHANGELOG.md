@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/sozialhelden/ui/compare/v1.4.0...v1.5.0) (2025-09-22)
+
+
+### Features
+
+* force new minor version release ([78b6923](https://github.com/sozialhelden/ui/commit/78b6923d3727ebcdeeede7ba46a32e919934fa21))
+
 # [1.4.0](https://github.com/sozialhelden/ui/compare/v1.3.0...v1.4.0) (2025-09-22)
 
 
