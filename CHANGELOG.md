@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/sozialhelden/ui/compare/v1.5.0...v1.6.0) (2025-10-16)
+
+
+### Features
+
+* add table ([c063be9](https://github.com/sozialhelden/ui/commit/c063be914db6335caaf3e77bb91d334ae82c4915))
+
 # [1.5.0](https://github.com/sozialhelden/ui/compare/v1.4.0...v1.5.0) (2025-09-22)
 
 
