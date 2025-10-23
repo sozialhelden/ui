@@ -25,3 +25,27 @@ export function App() {
   );
 }
 ```
+
+## Scroll to specific position
+
+```jsx
+import { useRef } from "react";
+import { ScrollArea, ScrollAreaRef } from '@sozialhelden/ui';
+
+export function App() {
+  const scrollArea = useRef<ScrollAreaRef>(null);
+
+  return (
+    <>
+        <button onClick={() => {
+            scrollArea.current?.scrollTo({ top: 100, left: 0, behavior: 'smooth' });
+        }}>
+          Scroll me baby
+        </button>
+        <ScrollArea ref={scrollArea}>
+          Scrollable content goes here.
+        </ScrollArea>
+    </>
+  );
+}
+```

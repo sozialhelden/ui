@@ -1,13 +1,29 @@
-import type * as React from "react";
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
-
+import type * as React from "react";
+import { type RefAttributes, useImperativeHandle, useRef } from "react";
 import { cn } from "@/lib/utils";
+
+type ScrollAreaRef = {
+  scrollTo: (options: ScrollToOptions) => void;
+};
 
 function ScrollArea({
   className,
   children,
+  ref,
   ...props
-}: React.ComponentProps<typeof ScrollAreaPrimitive.Root>) {
+}: React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root> &
+  RefAttributes<ScrollAreaRef>) {
+  const viewport = useRef<HTMLDivElement>(null);
+
+  useImperativeHandle(ref, () => {
+    return {
+      scrollTo: (options: ScrollToOptions) => {
+        viewport.current?.scrollTo(options);
+      },
+    };
+  }, []);
+
   return (
     <ScrollAreaPrimitive.Root
       data-slot="scroll-area"
@@ -15,6 +31,7 @@ function ScrollArea({
       {...props}
     >
       <ScrollAreaPrimitive.Viewport
+        ref={viewport}
         data-slot="scroll-area-viewport"
         className="focus-visible:ring-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:outline-1"
       >
@@ -53,4 +70,4 @@ function ScrollBar({
   );
 }
 
-export { ScrollArea, ScrollBar };
+export { ScrollArea, ScrollBar, type ScrollAreaRef };
