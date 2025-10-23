@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/sozialhelden/ui/compare/v1.6.0...v1.7.0) (2025-10-23)
+
+
+### Features
+
+* add scrollTo function to scroll-area component ([7756a61](https://github.com/sozialhelden/ui/commit/7756a6179b069edfa4aeb6a432a89a8b4a6d8e42))
+
 # [1.6.0](https://github.com/sozialhelden/ui/compare/v1.5.0...v1.6.0) (2025-10-16)
 
 
