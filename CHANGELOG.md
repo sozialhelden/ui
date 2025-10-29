@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/sozialhelden/ui/compare/v1.7.0...v1.8.0) (2025-10-29)
+
+
+### Features
+
+* add onScroll property to scroll-area ([8c16324](https://github.com/sozialhelden/ui/commit/8c16324cdf4a4d7b8988820cf80c5b5c9d2372b6))
+
 # [1.7.0](https://github.com/sozialhelden/ui/compare/v1.6.0...v1.7.0) (2025-10-23)
 
 
