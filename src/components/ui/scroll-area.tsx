@@ -1,25 +1,40 @@
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
 import type * as React from "react";
-import { type RefAttributes, useImperativeHandle, useRef } from "react";
+import {
+  type RefAttributes,
+  type UIEvent,
+  useImperativeHandle,
+  useRef,
+} from "react";
 import { cn } from "@/lib/utils";
 
 type ScrollAreaRef = {
   scrollTo: (options: ScrollToOptions) => void;
+  getScrollPosition: () => { left: number; top: number };
 };
 
 function ScrollArea({
   className,
   children,
   ref,
+  onScroll,
   ...props
 }: React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root> &
-  RefAttributes<ScrollAreaRef>) {
+  RefAttributes<ScrollAreaRef> & {
+    onScroll?: (event: UIEvent) => void;
+  }) {
   const viewport = useRef<HTMLDivElement>(null);
 
   useImperativeHandle(ref, () => {
     return {
       scrollTo: (options: ScrollToOptions) => {
         viewport.current?.scrollTo(options);
+      },
+      getScrollPosition: () => {
+        return {
+          left: viewport.current?.scrollLeft || 0,
+          top: viewport.current?.scrollTop || 0,
+        };
       },
     };
   }, []);
@@ -34,6 +49,7 @@ function ScrollArea({
         ref={viewport}
         data-slot="scroll-area-viewport"
         className="focus-visible:ring-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:outline-1"
+        onScroll={onScroll}
       >
         {children}
       </ScrollAreaPrimitive.Viewport>
