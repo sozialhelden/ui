@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/sozialhelden/ui/compare/v1.8.0...v1.8.1) (2025-11-05)
+
+
+### Bug Fixes
+
+* **deps:** update radix-ui-primitives monorepo ([b63a991](https://github.com/sozialhelden/ui/commit/b63a99144b978623eeeb106705abbc53b15fb132))
+
 # [1.8.0](https://github.com/sozialhelden/ui/compare/v1.7.0...v1.8.0) (2025-10-29)
 
 
