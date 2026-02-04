@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/sozialhelden/ui/compare/v1.8.2...v1.9.0) (2026-02-04)
+
+
+### Features
+
+* add combobox component ([ec6d704](https://github.com/sozialhelden/ui/commit/ec6d704ddcd4cafe5472f960e859e8dda70c172e))
+
 ## [1.8.2](https://github.com/sozialhelden/ui/compare/v1.8.1...v1.8.2) (2025-11-09)
 
 
