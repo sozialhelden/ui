@@ -9,7 +9,7 @@ export * from "@/components/ui/card";
 export * from "@/components/ui/carousel";
 export * from "@/components/ui/checkbox";
 export * from "@/components/ui/collapsible";
-export * from "@/components/ui/collapsible";
+export * from "@/components/ui/combobox";
 export * from "@/components/ui/dialog";
 export * from "@/components/ui/dropdown-menu";
 export * from "@/components/ui/form";
