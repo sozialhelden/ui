@@ -11,7 +11,7 @@ import {
   ComboboxLabel,
   ComboboxList,
   ComboboxSeparator,
-} from "@/components/ui/combobox"
+} from "@/components/ui/combobox";
 
 const meta = {
   title: "atoms/Combobox",
@@ -61,12 +61,12 @@ const timezones = [
       "(GMT+9) Seoul",
     ],
   },
-] as const
+] as const;
 
 export const Default: Story = {
   render: () => (
     <Combobox items={timezones}>
-      <ComboboxInput placeholder="Select a timezone"/>
+      <ComboboxInput placeholder="Select a timezone" />
       <ComboboxContent>
         <ComboboxEmpty>No timezones found.</ComboboxEmpty>
         <ComboboxList>
