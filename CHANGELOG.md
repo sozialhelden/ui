@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/sozialhelden/ui/compare/v1.9.0...v1.9.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency @base-ui/react to 1.1.0 ([4af29b9](https://github.com/sozialhelden/ui/commit/4af29b96918e513b49bfe04ae6092280c5d1e59a))
+
 # [1.9.0](https://github.com/sozialhelden/ui/compare/v1.8.2...v1.9.0) (2026-02-04)
 
 
