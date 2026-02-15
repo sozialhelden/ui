@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/sozialhelden/ui/compare/v1.9.2...v1.9.3) (2026-02-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency tailwind-merge to v3.4.1 ([3f1549b](https://github.com/sozialhelden/ui/commit/3f1549b1829f5e32f0137245e09f2c7aae8e11bf))
+
 ## [1.9.2](https://github.com/sozialhelden/ui/compare/v1.9.1...v1.9.2) (2026-02-12)
 
 
